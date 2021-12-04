@@ -143,4 +143,4 @@ serving_outputs = my_model(embeddings_output)
 serving_outputs = ReduceMeanLayer(axis=0, name='classifier')(serving_outputs)
 serving_model = tf.keras.Model(input_segment, serving_outputs)
 serving_model.save(saved_model_path, include_optimizer=False)
-
+  
