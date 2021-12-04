@@ -20,10 +20,10 @@ my_classes = ['Noise', 'Clean']
 map_class_to_id = {'Noise':0, 'Clean':1}
 
 #setting paths to dataset
-directory=r'C:\Users\pranj\OneDrive\Desktop\dataset_noise_bot\MS-SNSD-master\MS-SNSD-master\noise_train'
-dir2=r'C:\Users\pranj\OneDrive\Desktop\dataset_noise_bot\MS-SNSD-master\MS-SNSD-master\noise_test'
-dir3=r'C:\Users\pranj\OneDrive\Desktop\dataset\train\clean_train'
-dir4=r'C:\Users\pranj\OneDrive\Desktop\dataset\test\clean_test'
+directory='./MS-SNSD-master\MS-SNSD-master\noise_train'
+dir2='./MS-SNSD-master\MS-SNSD-master\noise_test'
+dir3='./train\clean_train'
+dir4='./test\clean_test'
 
 #storing all filenames fron different directories and joining .wav at the end
 all_files =glob.glob(os.path.join(directory,"*.wav"))
