@@ -35,17 +35,17 @@ def index():
 def predict():
    #requesting file from index.html and saving it on host machine
    file = request.files['file']
-   path='.\download_music_bot\temp.wav'
+   path='./download_music_bot\temp.wav'
    file.save(path)
    
 
    #reloading saved model
-   reloaded_model = tf.saved_model.load('.\noise_bot_model')
+   reloaded_model = tf.saved_model.load('./noise_bot_model')
    
    # Load a WAV file, convert it to a float tensor, resample to 16 kHz single-channel audio
    def load_wav_16k_mono():
     
-    file_contents = tf.io.read_file('.\download_music_bot\temp.wav')
+    file_contents = tf.io.read_file('./download_music_bot\temp.wav')
     wav, sample_rate = tf.audio.decode_wav(
           file_contents,
           desired_channels=1)
