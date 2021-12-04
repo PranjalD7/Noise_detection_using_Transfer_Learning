@@ -1,5 +1,5 @@
 # Noise_detection_using_Transfer_Learning
-Noise detection using transfer learning. The model used for transfer  learning is YAMNet found on tensorflow(https://tfhub.dev/google/yamnet/1). The dataset used is the Microsoft Scalable Noisy Speech Dataset (MS-SNSD)( https://github.com/microsoft/MS-SNSD ) which consists of two classes clean and noise,This dataset contains a large collection of clean speech files and variety of environmental noise files in .wav format sampled at 16 kHz. We have also hosted the model on local host using flask.
+Noise detection using transfer learning. The model used for transfer  learning is YAMNet found on tensorflow(https://tfhub.dev/google/yamnet/1). The dataset used is the Microsoft Scalable Noisy Speech Dataset (MS-SNSD)( https://github.com/microsoft/MS-SNSD ) which consists of two classes clean and noise.This dataset contains a large collection of clean speech files and variety of environmental noise files in .wav format sampled at 16 kHz. We have also hosted the model on local host using flask.
 
 Techs:Python 3.8.12,Tensorflow-2.7.0, tensorflow-hub 0.12.0, tensorflow-io 0.22.0, tensorflow-datasets 4.4.0,S oundFile 0.10.3.post1, Flas2.0.0, Flask-SQLAlchemy2.5.1, Jinja2 3.0.3
 
