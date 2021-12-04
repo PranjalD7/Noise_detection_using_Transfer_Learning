@@ -58,5 +58,5 @@ def predict():
    return render_template('predict.html', prediction =noise_or_clean)
 #hosting on localhost
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) 
 
