@@ -9,6 +9,8 @@ web application where we can upload the sound files for classification, the file
 The file noise_final_datapush contains the code for training the model using transfer learing on the Microsoft Scalable Noisy Speech Dataset, the weights are saved at the end
 but the model can be retrained too.
 
+set the paths before running the project
+create an additional folder for storing the downloaded audios on host machine(app.py-  variable->path)
 To run the web app-
 1.run the app.py file
 2.Enter URL http://localhost:5000/predict in your web browser
